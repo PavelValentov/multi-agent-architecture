@@ -822,6 +822,33 @@ graph TB
     style InputHooks fill:#f0fff5,stroke:#00e676,stroke-width:1px,color:#333
     style SystemHooks fill:#f0fff5,stroke:#00e676,stroke-width:1px,color:#333
     style WorktreeHooks fill:#f0fff5,stroke:#00e676,stroke-width:1px,color:#333
+    style H_SETUP fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_SESSION_START fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_SESSION_END fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_STOP fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_STOP_FAIL fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_PRE fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_POST fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_POST_F fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_PERM_R fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_PERM_D fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_SUB_START fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_SUB_STOP fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_TEAMMATE fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_TASK_CREATE fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_TASK_DONE fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_PRE_COMPACT fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_POST_COMPACT fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_PROMPT fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_ELICIT fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_ELICIT_R fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_NOTIF fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_CONFIG fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_INSTRUCT fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_CWD fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_FILE fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_WT_CREATE fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style H_WT_REMOVE fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
     style HookImpl fill:#fffef0,stroke:#fdcb6e,stroke-width:2px,color:#333
     style HookResponse fill:#f5f5fa,stroke:#888,stroke-width:1px,color:#333
 ```
@@ -1097,6 +1124,11 @@ graph TB
     style TASK_NOTIF fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
     style REG_MAP fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
     style LOOKUP fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style MSG_FIELDS fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style NOTIF_FIELDS fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style DIRECT fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style NAMED fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style BROADCAST fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
 ```
 
 ---
@@ -1165,6 +1197,21 @@ graph TB
     style SAVINGS fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
     style LATENCY fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
     style SCALE fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
+    style SYS_PROMPT fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style USER_CTX fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style SYS_CTX fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style TOOL_CTX fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style FORK_MSG fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style KEY fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style CHILD_A fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style CHILD_B fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style CHILD_C fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style CHILD_N fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style ISO_FILE fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style ISO_DENIAL fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style ISO_CONTENT fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style ISO_STATE fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
+    style ISO_ABORT fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
 ```
 
 ---
