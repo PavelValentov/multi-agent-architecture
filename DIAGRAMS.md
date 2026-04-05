@@ -37,7 +37,6 @@ This document contains **14 Mermaid diagrams** that describe the complete archit
 ## 1. High-Level System Architecture
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"background": "#ffffff"}}}%%
 graph TB
     subgraph Entry["Entry Points"]
         CLI["CLI Bootstrap"]
@@ -182,7 +181,6 @@ graph TB
 ## 2. Query Loop — Conversation Turn Lifecycle
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"background": "#ffffff"}}}%%
 sequenceDiagram
     participant U as User / UI
     participant QE as Query Engine
@@ -260,7 +258,6 @@ sequenceDiagram
 ## 3. Agent Spawning & Execution Flow
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"background": "#ffffff"}}}%%
 graph TB
     subgraph Parent["Parent Agent Context"]
         PA_QE["Parent Query Engine"]
@@ -366,7 +363,6 @@ graph TB
 ## 4. Coordinator Mode — Multi-Worker Orchestration
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"background": "#ffffff"}}}%%
 graph TB
     subgraph Coordinator["Coordinator Agent"]
         C_QE["Coordinator Query Engine"]
@@ -457,7 +453,6 @@ graph TB
 ## 5. Tool Registry & Dispatch
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"background": "#ffffff"}}}%%
 graph LR
     subgraph Registry["Tool Registry"]
         GET_ALL["Collect All<br/>Base Tools"]
@@ -542,7 +537,6 @@ graph LR
 ## 6. Permission System Flow
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"background": "#ffffff"}}}%%
 flowchart TD
     CALL["Tool Call Requested"]
     CALL --> VALIDATE["Input Validation<br/>Semantic Checks"]
@@ -611,7 +605,6 @@ flowchart TD
 ## 7. State Management & Data Flow
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"background": "#ffffff"}}}%%
 graph TB
     subgraph AppState["Central State Store"]
         SETTINGS["Settings Configuration"]
@@ -675,7 +668,6 @@ graph TB
 ## 8. MCP Integration Architecture
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"background": "#ffffff"}}}%%
 graph TB
     subgraph Config["MCP Configuration Sources"]
         USER_CFG["User Settings<br/>MCP Server Definitions"]
@@ -738,7 +730,6 @@ graph TB
 ## 9. Plugin & Hook System
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"background": "#ffffff"}}}%%
 graph TB
     subgraph PluginSources["Plugin Sources"]
         BUILTIN["Built-in Plugins"]
@@ -867,7 +858,6 @@ graph TB
 ## 10. Compaction Strategies
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"background": "#ffffff"}}}%%
 flowchart LR
     subgraph Input["Context Budget Check"]
         TOKENS["Current tokens vs<br/>context window"]
@@ -901,7 +891,6 @@ flowchart LR
 ## 11. Bridge / Remote Execution Architecture
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"background": "#ffffff"}}}%%
 graph TB
     subgraph Local["Local Machine"]
         LOCAL_CLI["CLI Client"]
@@ -951,7 +940,6 @@ graph TB
 ## 12. Message Type Hierarchy
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"background": "#ffffff"}}}%%
 classDiagram
     class Message {
         &lt;&lt;union&gt;&gt;
@@ -1079,7 +1067,6 @@ classDiagram
 ## 13. Agent Communication System
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"background": "#ffffff"}}}%%
 graph TB
     subgraph AgentComm["Agent Communication System"]
         subgraph MailboxSystem["Mailbox (Queue + Async Waiters)"]
@@ -1149,7 +1136,6 @@ graph TB
 ## 14. Prompt Cache Sharing
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"background": "#ffffff"}}}%%
 graph TB
     subgraph CacheSharing["Prompt Cache Sharing Architecture"]
         PARENT["Parent Agent<br/>Establishes Cache Breakpoints"]
