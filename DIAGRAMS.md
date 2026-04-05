@@ -1173,13 +1173,13 @@ graph TB
 
 | Symbol | Meaning |
 |--------|---------|
-| <img src="https://img.shields.io/badge/node-00e676?style=flat-square&labelColor=00e676&color=00e676" alt="green"/> | New or improved element (added during verification) |
-| <img src="https://img.shields.io/badge/section-0a2015?style=flat-square&labelColor=0a2015&color=00e676" alt="green section"/> | New section (dark green fill, green border) |
-| <img src="https://img.shields.io/badge/core-2d1117?style=flat-square&labelColor=2d1117&color=e94560" alt="core"/> | Core engine group |
-| <img src="https://img.shields.io/badge/agents-1a1530?style=flat-square&labelColor=1a1530&color=6c5ce7" alt="agents"/> | Agent system group |
-| <img src="https://img.shields.io/badge/sync-101a2d?style=flat-square&labelColor=101a2d&color=74b9ff" alt="sync"/> | UI / sync execution group |
-| <img src="https://img.shields.io/badge/async-0a2020?style=flat-square&labelColor=0a2020&color=00cec9" alt="async"/> | State / async execution group |
-| <img src="https://img.shields.io/badge/cache-2d2510?style=flat-square&labelColor=2d2510&color=fdcb6e" alt="cache"/> | Persistence / cache group |
+| ![green](https://img.shields.io/badge/%E2%96%A0%E2%96%A0%E2%96%A0-00e676?style=flat-square) | **Green node** — new or improved element |
+| ![green border](https://img.shields.io/badge/%E2%96%A0%E2%96%A0%E2%96%A0-0a2015?style=flat-square&logoColor=00e676) | **Green section** — dark green fill, green border |
+| ![core](https://img.shields.io/badge/%E2%96%A0%E2%96%A0%E2%96%A0-e94560?style=flat-square) | **Core engine** group |
+| ![agents](https://img.shields.io/badge/%E2%96%A0%E2%96%A0%E2%96%A0-6c5ce7?style=flat-square) | **Agent system** group |
+| ![sync](https://img.shields.io/badge/%E2%96%A0%E2%96%A0%E2%96%A0-74b9ff?style=flat-square) | **UI / sync execution** group |
+| ![async](https://img.shields.io/badge/%E2%96%A0%E2%96%A0%E2%96%A0-00cec9?style=flat-square) | **State / async** group |
+| ![cache](https://img.shields.io/badge/%E2%96%A0%E2%96%A0%E2%96%A0-fdcb6e?style=flat-square) | **Persistence / cache** group |
 | ⚑ | Feature-gated (conditional loading) |
 | **Solid arrow** (→) | Direct dependency or call |
 | **Dashed arrow** (⇢) | Async or event-based communication |
