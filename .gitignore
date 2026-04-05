@@ -1,0 +1,15 @@
+node_modules/
+.env
+.DS_Store
+*.log
+
+# IDE
+.idea/
+
+# Local-only files (not for public repo)
+POST.md
+TASK.md
+origin/
+
+**/*.*backup*
+**/*.bak
