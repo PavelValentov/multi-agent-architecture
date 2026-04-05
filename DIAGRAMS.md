@@ -1153,11 +1153,19 @@ graph TB
 
 ---
 
-> **Legend:**
-> - **Green nodes** (`#00e676`) = new or significantly improved elements discovered during verification
-> - **Green subgraph borders** = new sections (transparent background for arrow visibility)
-> - **Colored subgraph borders** = thematic groups (transparent background)
-> - ⚑ = feature-gated (conditional loading)
-> - Solid arrows = direct dependency / call
-> - Dashed arrows = async / event-based communication
-> - 14 diagrams total: 12 core architecture + 2 new agent infrastructure diagrams
+## Legend
+
+| Symbol | Meaning |
+|--------|---------|
+| <img src="https://img.shields.io/badge/node-%2300e676?style=flat-square" alt="green node"/> | New or improved element (added during verification) |
+| <img src="https://img.shields.io/badge/border-%2300e676?style=flat-square" alt="green border"/> | New section border (transparent fill for arrow visibility) |
+| <img src="https://img.shields.io/badge/border-%23e94560?style=flat-square" alt="red border"/> | Core engine group |
+| <img src="https://img.shields.io/badge/border-%236c5ce7?style=flat-square" alt="purple border"/> | Agent system group |
+| <img src="https://img.shields.io/badge/border-%2374b9ff?style=flat-square" alt="blue border"/> | UI / sync execution group |
+| <img src="https://img.shields.io/badge/border-%2300cec9?style=flat-square" alt="teal border"/> | State / async execution group |
+| <img src="https://img.shields.io/badge/border-%23fdcb6e?style=flat-square" alt="yellow border"/> | Persistence / cache group |
+| ⚑ | Feature-gated (conditional loading) |
+| **Solid arrow** (→) | Direct dependency or call |
+| **Dashed arrow** (⇢) | Async or event-based communication |
+
+14 diagrams: 12 core architecture + 2 agent infrastructure additions.

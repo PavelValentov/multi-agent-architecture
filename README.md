@@ -99,8 +99,7 @@ The [diagram file](DIAGRAMS.md) contains 14 Mermaid diagrams:
 13. **Agent Communication System** — Mailbox, notifications, routing
 14. **Prompt Cache Sharing** — Cache optimization architecture
 
-> [!NOTE]
-> <span style="background-color:#00e676;color:#000;padding:2px 8px;border-radius:3px">Green-highlighted elements</span> indicate improvements and additions made during the architectural analysis.
+<img src="https://img.shields.io/badge/Green_elements-%2300e676?style=flat-square" alt="green"/> — improvements and additions made during the architectural analysis. See the full [legend in DIAGRAMS.md](DIAGRAMS.md#legend).
 
 ## Verified Facts
 
