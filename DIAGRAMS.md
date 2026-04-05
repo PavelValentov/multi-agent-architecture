@@ -10,7 +10,6 @@ This document contains **14 Mermaid diagrams** that describe the complete archit
 
 - **View diagrams**: Open this file in any Mermaid-compatible renderer — VS Code (Mermaid Preview extension), GitHub, [mermaid.live](https://mermaid.live), or any Markdown viewer with Mermaid support.
 - **Navigate**: Each diagram covers a distinct architectural layer. Start with Diagram 1 for the high-level overview, then drill into specific areas.
-- **Green elements** (`#00e676`): Indicate components that were discovered or significantly improved during verification — they represent findings that most public analyses missed.
 - **Companion document**: See [ARCHITECTURE.md](ARCHITECTURE.md) for a full textual description of every component shown here.
 
 ### Diagram Index
@@ -171,9 +170,6 @@ graph TB
     style Permissions stroke:#e17055,stroke-width:2px
     style Plugins stroke:#a29bfe,stroke-width:1px
     style UI stroke:#74b9ff,stroke-width:2px
-    style TEAMMATE fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
-    style HOOKS_SYS fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
-    style COMPACT fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
 ```
 
 ---
@@ -351,11 +347,6 @@ graph TB
     style WorktreePath stroke:#a29bfe,stroke-width:2px
     style RemotePath stroke:#55efc4,stroke-width:2px
     style CacheOptimization stroke:#fdcb6e,stroke-width:2px
-    style TeammatePath stroke:#00e676,stroke-width:3px
-    style TEAMMATE_SPAWN fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
-    style TM_REGISTER fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
-    style TM_PROCESS fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
-    style TM_NOTIFY fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
 ```
 
 ---
@@ -443,9 +434,6 @@ graph TB
     style PHASE4 stroke:#55efc4,stroke-width:2px
     style WorkerToolset stroke:#888,stroke-width:1px
     style SharedState stroke:#00cec9,stroke-width:2px
-    style SEND_MSG_NODE fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
-    style TASK_STOP_NODE fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
-    style SCRATCH fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
 ```
 
 ---
@@ -597,7 +585,6 @@ flowchart TD
     style ALLOW_RESULT fill:#27ae60,stroke:#2ecc71,color:#000
     style DENY_RESULT fill:#e74c3c,stroke:#c0392b,color:#000
     style CLASSIFIER fill:#f39c12,stroke:#e67e22,color:#000
-    style BUBBLE fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
 ```
 
 ---
@@ -660,7 +647,6 @@ graph TB
     style Contexts stroke:#6c5ce7,stroke-width:2px
     style Hooks stroke:#a29bfe,stroke-width:2px
     style Persistence stroke:#fdcb6e,stroke-width:2px
-    style AGENTS fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
 ```
 
 ---
@@ -721,8 +707,6 @@ graph TB
     style Transports stroke:#00cec9,stroke-width:2px
     style Client stroke:#fdcb6e,stroke-width:2px
     style Integration stroke:#55efc4,stroke-width:2px
-    style SSE_IDE fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
-    style CLAUDE_PROXY fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
 ```
 
 ---
@@ -813,42 +797,6 @@ graph TB
 
     style PluginSources stroke:#e94560,stroke-width:1px
     style PluginComponents stroke:#888,stroke-width:1px
-    style HookEvents stroke:#00e676,stroke-width:3px
-    style LifecycleHooks stroke:#00e676,stroke-width:1px
-    style ToolHooks stroke:#00e676,stroke-width:1px
-    style PermHooks stroke:#00e676,stroke-width:1px
-    style AgentHooks stroke:#00e676,stroke-width:1px
-    style CompactHooks stroke:#00e676,stroke-width:1px
-    style InputHooks stroke:#00e676,stroke-width:1px
-    style SystemHooks stroke:#00e676,stroke-width:1px
-    style WorktreeHooks stroke:#00e676,stroke-width:1px
-    style H_SETUP fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_SESSION_START fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_SESSION_END fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_STOP fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_STOP_FAIL fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_PRE fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_POST fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_POST_F fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_PERM_R fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_PERM_D fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_SUB_START fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_SUB_STOP fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_TEAMMATE fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_TASK_CREATE fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_TASK_DONE fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_PRE_COMPACT fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_POST_COMPACT fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_PROMPT fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_ELICIT fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_ELICIT_R fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_NOTIF fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_CONFIG fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_INSTRUCT fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_CWD fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_FILE fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_WT_CREATE fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style H_WT_REMOVE fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
     style HookImpl stroke:#fdcb6e,stroke-width:2px
     style HookResponse stroke:#888,stroke-width:1px
 ```
@@ -881,9 +829,6 @@ flowchart LR
 
     style Input stroke:#888,stroke-width:1px
     style STRATEGIES stroke:#e94560,stroke-width:2px
-    style SESSION_MEM fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
-    style CTX_COLLAPSE fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
-    style MEMORY_STORE fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
 ```
 
 ---
@@ -1110,25 +1055,6 @@ graph TB
     NAMED --> MB_CLASS
     BROADCAST --> MB_CLASS
 
-    style AgentComm stroke:#00e676,stroke-width:3px
-    style MailboxSystem stroke:#00e676,stroke-width:1px
-    style MessageFormat stroke:#00e676,stroke-width:1px
-    style TaskNotifications stroke:#00e676,stroke-width:1px
-    style NameRegistry stroke:#00e676,stroke-width:1px
-    style MessageRouting stroke:#00e676,stroke-width:1px
-    style MB_CLASS fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
-    style SEND fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style POLL fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style RECEIVE fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style SUBSCRIBE fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style TASK_NOTIF fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style REG_MAP fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style LOOKUP fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style MSG_FIELDS fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style NOTIF_FIELDS fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style DIRECT fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style NAMED fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style BROADCAST fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
 ```
 
 ---
@@ -1187,31 +1113,6 @@ graph TB
     SAVINGS --> LATENCY
     LATENCY --> SCALE
 
-    style CacheSharing stroke:#00e676,stroke-width:3px
-    style CacheSafe stroke:#00e676,stroke-width:1px
-    style CacheKey stroke:#00e676,stroke-width:1px
-    style Children stroke:#00e676,stroke-width:1px
-    style Isolation stroke:#00e676,stroke-width:1px
-    style Benefit stroke:#00e676,stroke-width:1px
-    style PARENT fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
-    style SAVINGS fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
-    style LATENCY fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
-    style SCALE fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
-    style SYS_PROMPT fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style USER_CTX fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style SYS_CTX fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style TOOL_CTX fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style FORK_MSG fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style KEY fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style CHILD_A fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style CHILD_B fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style CHILD_C fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style CHILD_N fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style ISO_FILE fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style ISO_DENIAL fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style ISO_CONTENT fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style ISO_STATE fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
-    style ISO_ABORT fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
 ```
 
 ---
@@ -1220,8 +1121,6 @@ graph TB
 
 | Symbol | Meaning |
 |--------|---------|
-| ![](https://img.shields.io/badge/green_node-00e676?style=for-the-badge) | New or improved element |
-| ![](https://img.shields.io/badge/green_section-f0fff5?style=for-the-badge&logoColor=00e676) | New section (mint fill, green border) |
 | ![](https://img.shields.io/badge/core_engine-fff0f0?style=for-the-badge) | Core engine group (rose border) |
 | ![](https://img.shields.io/badge/agent_system-f3f0ff?style=for-the-badge) | Agent system group (purple border) |
 | ![](https://img.shields.io/badge/sync_/_UI-f0f5ff?style=for-the-badge) | UI / sync execution group (blue border) |
