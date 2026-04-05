@@ -161,14 +161,16 @@ graph TB
     REPL --> INK
     MAIN --> ANALYTICS
 
-    style Core fill:transparent,stroke:#e94560,stroke-width:3px
-    style AgentSystem fill:transparent,stroke:#6c5ce7,stroke-width:2px
-    style ToolSystem fill:transparent,stroke:#a29bfe,stroke-width:2px
-    style TaskSystem fill:transparent,stroke:#fd79a8,stroke-width:2px
-    style State fill:transparent,stroke:#00cec9,stroke-width:2px
-    style Services fill:transparent,stroke:#55efc4,stroke-width:2px
-    style Permissions fill:transparent,stroke:#e17055,stroke-width:2px
-    style UI fill:transparent,stroke:#74b9ff,stroke-width:2px
+    style Entry fill:#1a1a2e,stroke:#888,stroke-width:1px,color:#fff
+    style Core fill:#2d1117,stroke:#e94560,stroke-width:3px,color:#fff
+    style AgentSystem fill:#1a1530,stroke:#6c5ce7,stroke-width:2px,color:#fff
+    style ToolSystem fill:#1e1a2e,stroke:#a29bfe,stroke-width:2px,color:#fff
+    style TaskSystem fill:#2d1520,stroke:#fd79a8,stroke-width:2px,color:#fff
+    style State fill:#0a2020,stroke:#00cec9,stroke-width:2px,color:#fff
+    style Services fill:#0a201a,stroke:#55efc4,stroke-width:2px,color:#fff
+    style Permissions fill:#2d1510,stroke:#e17055,stroke-width:2px,color:#fff
+    style Plugins fill:#1a1a2e,stroke:#a29bfe,stroke-width:1px,color:#fff
+    style UI fill:#101a2d,stroke:#74b9ff,stroke-width:2px,color:#fff
     style TEAMMATE fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
     style HOOKS_SYS fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
     style COMPACT fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
@@ -343,13 +345,13 @@ graph TB
 
     CLONE -.->|"inherits parent cache"| CACHE
 
-    style Parent fill:transparent,stroke:#e94560,stroke-width:2px
-    style SyncPath fill:transparent,stroke:#74b9ff,stroke-width:2px
-    style AsyncPath fill:transparent,stroke:#00cec9,stroke-width:2px
-    style WorktreePath fill:transparent,stroke:#a29bfe,stroke-width:2px
-    style RemotePath fill:transparent,stroke:#55efc4,stroke-width:2px
-    style CacheOptimization fill:transparent,stroke:#fdcb6e,stroke-width:2px
-    style TeammatePath fill:transparent,stroke:#00e676,stroke-width:3px
+    style Parent fill:#2d1117,stroke:#e94560,stroke-width:2px,color:#fff
+    style SyncPath fill:#101a2d,stroke:#74b9ff,stroke-width:2px,color:#fff
+    style AsyncPath fill:#0a2020,stroke:#00cec9,stroke-width:2px,color:#fff
+    style WorktreePath fill:#1e1a2e,stroke:#a29bfe,stroke-width:2px,color:#fff
+    style RemotePath fill:#0a201a,stroke:#55efc4,stroke-width:2px,color:#fff
+    style CacheOptimization fill:#2d2510,stroke:#fdcb6e,stroke-width:2px,color:#fff
+    style TeammatePath fill:#0a2015,stroke:#00e676,stroke-width:3px,color:#fff
     style TEAMMATE_SPAWN fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
     style TM_REGISTER fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
     style TM_PROCESS fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
@@ -434,11 +436,13 @@ graph TB
     I1 -.->|"shared knowledge"| SCRATCH
     I2 -.->|"shared knowledge"| SCRATCH
 
-    style Coordinator fill:transparent,stroke:#e94560,stroke-width:3px
-    style PHASE1 fill:transparent,stroke:#74b9ff,stroke-width:2px
-    style PHASE2 fill:transparent,stroke:#fdcb6e,stroke-width:2px
-    style PHASE3 fill:transparent,stroke:#74b9ff,stroke-width:2px
-    style PHASE4 fill:transparent,stroke:#55efc4,stroke-width:2px
+    style Coordinator fill:#2d1117,stroke:#e94560,stroke-width:3px,color:#fff
+    style PHASE1 fill:#101a2d,stroke:#74b9ff,stroke-width:2px,color:#fff
+    style PHASE2 fill:#2d2510,stroke:#fdcb6e,stroke-width:2px,color:#fff
+    style PHASE3 fill:#101a2d,stroke:#74b9ff,stroke-width:2px,color:#fff
+    style PHASE4 fill:#0a201a,stroke:#55efc4,stroke-width:2px,color:#fff
+    style WorkerToolset fill:#1a1a2e,stroke:#888,stroke-width:1px,color:#fff
+    style SharedState fill:#0a2020,stroke:#00cec9,stroke-width:2px,color:#fff
     style SEND_MSG_NODE fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
     style TASK_STOP_NODE fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
     style SCRATCH fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
@@ -515,9 +519,17 @@ graph LR
     PARTITION --> PAR
     PARTITION --> SER
 
-    style BuiltInTools fill:transparent,stroke:#e94560,stroke-width:1px
-    style External fill:transparent,stroke:#00cec9,stroke-width:2px
-    style Execution fill:transparent,stroke:#fdcb6e,stroke-width:2px
+    style Registry fill:#1a1a2e,stroke:#888,stroke-width:1px,color:#fff
+    style BuiltInTools fill:#2d1117,stroke:#e94560,stroke-width:1px,color:#fff
+    style IO fill:#1a1a2e,stroke:#666,stroke-width:1px,color:#fff
+    style Web fill:#1a1a2e,stroke:#666,stroke-width:1px,color:#fff
+    style Agent fill:#1a1a2e,stroke:#666,stroke-width:1px,color:#fff
+    style Planning fill:#1a1a2e,stroke:#666,stroke-width:1px,color:#fff
+    style Specialized fill:#1a1a2e,stroke:#666,stroke-width:1px,color:#fff
+    style CoordTools fill:#1a1a2e,stroke:#666,stroke-width:1px,color:#fff
+    style MCPBridge fill:#1a1a2e,stroke:#666,stroke-width:1px,color:#fff
+    style External fill:#0a2020,stroke:#00cec9,stroke-width:2px,color:#fff
+    style Execution fill:#2d2510,stroke:#fdcb6e,stroke-width:2px,color:#fff
 ```
 
 ---
@@ -581,6 +593,7 @@ flowchart TD
 
     MATCH_RULES -.-> RuleSources
 
+    style RuleSources fill:#1a1a2e,stroke:#888,stroke-width:1px,color:#fff
     style ALLOW_RESULT fill:#27ae60,stroke:#2ecc71,color:#fff
     style DENY_RESULT fill:#e74c3c,stroke:#c0392b,color:#fff
     style CLASSIFIER fill:#f39c12,stroke:#e67e22,color:#fff
@@ -643,10 +656,10 @@ graph TB
     TASKS --> TRANSCRIPT
     TASKS --> COST_FILE
 
-    style AppState fill:transparent,stroke:#e94560,stroke-width:2px
-    style Contexts fill:transparent,stroke:#6c5ce7,stroke-width:2px
-    style Hooks fill:transparent,stroke:#a29bfe,stroke-width:2px
-    style Persistence fill:transparent,stroke:#fdcb6e,stroke-width:2px
+    style AppState fill:#2d1117,stroke:#e94560,stroke-width:2px,color:#fff
+    style Contexts fill:#1a1530,stroke:#6c5ce7,stroke-width:2px,color:#fff
+    style Hooks fill:#1e1a2e,stroke:#a29bfe,stroke-width:2px,color:#fff
+    style Persistence fill:#2d2510,stroke:#fdcb6e,stroke-width:2px,color:#fff
     style AGENTS fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
 ```
 
@@ -704,10 +717,10 @@ graph TB
     Client --> PERM
     Client --> ELICIT
 
-    style Config fill:transparent,stroke:#e94560,stroke-width:1px
-    style Transports fill:transparent,stroke:#00cec9,stroke-width:2px
-    style Client fill:transparent,stroke:#fdcb6e,stroke-width:2px
-    style Integration fill:transparent,stroke:#55efc4,stroke-width:2px
+    style Config fill:#2d1117,stroke:#e94560,stroke-width:1px,color:#fff
+    style Transports fill:#0a2020,stroke:#00cec9,stroke-width:2px,color:#fff
+    style Client fill:#2d2510,stroke:#fdcb6e,stroke-width:2px,color:#fff
+    style Integration fill:#0a201a,stroke:#55efc4,stroke-width:2px,color:#fff
     style SSE_IDE fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
     style CLAUDE_PROXY fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
 ```
@@ -798,17 +811,19 @@ graph TB
     HookEvents --> HookImpl
     HookImpl --> HookResponse
 
-    style PluginSources fill:transparent,stroke:#e94560,stroke-width:1px
-    style HookEvents fill:transparent,stroke:#00e676,stroke-width:3px
-    style LifecycleHooks fill:transparent,stroke:#00e676,stroke-width:1px
-    style ToolHooks fill:transparent,stroke:#00e676,stroke-width:1px
-    style PermHooks fill:transparent,stroke:#00e676,stroke-width:1px
-    style AgentHooks fill:transparent,stroke:#00e676,stroke-width:1px
-    style CompactHooks fill:transparent,stroke:#00e676,stroke-width:1px
-    style InputHooks fill:transparent,stroke:#00e676,stroke-width:1px
-    style SystemHooks fill:transparent,stroke:#00e676,stroke-width:1px
-    style WorktreeHooks fill:transparent,stroke:#00e676,stroke-width:1px
-    style HookImpl fill:transparent,stroke:#fdcb6e,stroke-width:2px
+    style PluginSources fill:#2d1117,stroke:#e94560,stroke-width:1px,color:#fff
+    style PluginComponents fill:#1a1a2e,stroke:#888,stroke-width:1px,color:#fff
+    style HookEvents fill:#0a2015,stroke:#00e676,stroke-width:3px,color:#fff
+    style LifecycleHooks fill:#0a2015,stroke:#00e676,stroke-width:1px,color:#fff
+    style ToolHooks fill:#0a2015,stroke:#00e676,stroke-width:1px,color:#fff
+    style PermHooks fill:#0a2015,stroke:#00e676,stroke-width:1px,color:#fff
+    style AgentHooks fill:#0a2015,stroke:#00e676,stroke-width:1px,color:#fff
+    style CompactHooks fill:#0a2015,stroke:#00e676,stroke-width:1px,color:#fff
+    style InputHooks fill:#0a2015,stroke:#00e676,stroke-width:1px,color:#fff
+    style SystemHooks fill:#0a2015,stroke:#00e676,stroke-width:1px,color:#fff
+    style WorktreeHooks fill:#0a2015,stroke:#00e676,stroke-width:1px,color:#fff
+    style HookImpl fill:#2d2510,stroke:#fdcb6e,stroke-width:2px,color:#fff
+    style HookResponse fill:#1a1a2e,stroke:#888,stroke-width:1px,color:#fff
 ```
 
 ---
@@ -837,7 +852,8 @@ flowchart LR
     CTX_COLLAPSE -->|"feature-gated"| API_CALL
     SESSION_MEM -->|"periodic<br/>extraction"| MEMORY_STORE["Memory Store"]
 
-    style STRATEGIES fill:transparent,stroke:#e94560,stroke-width:2px
+    style Input fill:#1a1a2e,stroke:#888,stroke-width:1px,color:#fff
+    style STRATEGIES fill:#2d1117,stroke:#e94560,stroke-width:2px,color:#fff
     style SESSION_MEM fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
     style CTX_COLLAPSE fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
     style MEMORY_STORE fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
@@ -887,9 +903,9 @@ graph TB
     WS_TRANSPORT --> POLL
     WS_TRANSPORT --> FORWARD
 
-    style Local fill:transparent,stroke:#e94560,stroke-width:2px
-    style Remote fill:transparent,stroke:#00cec9,stroke-width:2px
-    style Protocol fill:transparent,stroke:#fdcb6e,stroke-width:2px
+    style Local fill:#2d1117,stroke:#e94560,stroke-width:2px,color:#fff
+    style Remote fill:#0a2020,stroke:#00cec9,stroke-width:2px,color:#fff
+    style Protocol fill:#2d2510,stroke:#fdcb6e,stroke-width:2px,color:#fff
 ```
 
 ---
@@ -1067,12 +1083,12 @@ graph TB
     NAMED --> MB_CLASS
     BROADCAST --> MB_CLASS
 
-    style AgentComm fill:transparent,stroke:#00e676,stroke-width:3px
-    style MailboxSystem fill:transparent,stroke:#00e676,stroke-width:1px
-    style MessageFormat fill:transparent,stroke:#00e676,stroke-width:1px
-    style TaskNotifications fill:transparent,stroke:#00e676,stroke-width:1px
-    style NameRegistry fill:transparent,stroke:#00e676,stroke-width:1px
-    style MessageRouting fill:transparent,stroke:#00e676,stroke-width:1px
+    style AgentComm fill:#0a2015,stroke:#00e676,stroke-width:3px,color:#fff
+    style MailboxSystem fill:#0a2015,stroke:#00e676,stroke-width:1px,color:#fff
+    style MessageFormat fill:#0a2015,stroke:#00e676,stroke-width:1px,color:#fff
+    style TaskNotifications fill:#0a2015,stroke:#00e676,stroke-width:1px,color:#fff
+    style NameRegistry fill:#0a2015,stroke:#00e676,stroke-width:1px,color:#fff
+    style MessageRouting fill:#0a2015,stroke:#00e676,stroke-width:1px,color:#fff
     style MB_CLASS fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
     style SEND fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
     style POLL fill:#00e676,stroke:#00c853,stroke-width:1px,color:#000
@@ -1139,12 +1155,12 @@ graph TB
     SAVINGS --> LATENCY
     LATENCY --> SCALE
 
-    style CacheSharing fill:transparent,stroke:#00e676,stroke-width:3px
-    style CacheSafe fill:transparent,stroke:#00e676,stroke-width:1px
-    style CacheKey fill:transparent,stroke:#00e676,stroke-width:1px
-    style Children fill:transparent,stroke:#00e676,stroke-width:1px
-    style Isolation fill:transparent,stroke:#00e676,stroke-width:1px
-    style Benefit fill:transparent,stroke:#00e676,stroke-width:1px
+    style CacheSharing fill:#0a2015,stroke:#00e676,stroke-width:3px,color:#fff
+    style CacheSafe fill:#0a2015,stroke:#00e676,stroke-width:1px,color:#fff
+    style CacheKey fill:#0a2015,stroke:#00e676,stroke-width:1px,color:#fff
+    style Children fill:#0a2015,stroke:#00e676,stroke-width:1px,color:#fff
+    style Isolation fill:#0a2015,stroke:#00e676,stroke-width:1px,color:#fff
+    style Benefit fill:#0a2015,stroke:#00e676,stroke-width:1px,color:#fff
     style PARENT fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
     style SAVINGS fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
     style LATENCY fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000
@@ -1157,13 +1173,13 @@ graph TB
 
 | Symbol | Meaning |
 |--------|---------|
-| <img src="https://img.shields.io/badge/node-%2300e676?style=flat-square" alt="green node"/> | New or improved element (added during verification) |
-| <img src="https://img.shields.io/badge/border-%2300e676?style=flat-square" alt="green border"/> | New section border (transparent fill for arrow visibility) |
-| <img src="https://img.shields.io/badge/border-%23e94560?style=flat-square" alt="red border"/> | Core engine group |
-| <img src="https://img.shields.io/badge/border-%236c5ce7?style=flat-square" alt="purple border"/> | Agent system group |
-| <img src="https://img.shields.io/badge/border-%2374b9ff?style=flat-square" alt="blue border"/> | UI / sync execution group |
-| <img src="https://img.shields.io/badge/border-%2300cec9?style=flat-square" alt="teal border"/> | State / async execution group |
-| <img src="https://img.shields.io/badge/border-%23fdcb6e?style=flat-square" alt="yellow border"/> | Persistence / cache group |
+| <img src="https://img.shields.io/badge/node-00e676?style=flat-square&labelColor=00e676&color=00e676" alt="green"/> | New or improved element (added during verification) |
+| <img src="https://img.shields.io/badge/section-0a2015?style=flat-square&labelColor=0a2015&color=00e676" alt="green section"/> | New section (dark green fill, green border) |
+| <img src="https://img.shields.io/badge/core-2d1117?style=flat-square&labelColor=2d1117&color=e94560" alt="core"/> | Core engine group |
+| <img src="https://img.shields.io/badge/agents-1a1530?style=flat-square&labelColor=1a1530&color=6c5ce7" alt="agents"/> | Agent system group |
+| <img src="https://img.shields.io/badge/sync-101a2d?style=flat-square&labelColor=101a2d&color=74b9ff" alt="sync"/> | UI / sync execution group |
+| <img src="https://img.shields.io/badge/async-0a2020?style=flat-square&labelColor=0a2020&color=00cec9" alt="async"/> | State / async execution group |
+| <img src="https://img.shields.io/badge/cache-2d2510?style=flat-square&labelColor=2d2510&color=fdcb6e" alt="cache"/> | Persistence / cache group |
 | ⚑ | Feature-gated (conditional loading) |
 | **Solid arrow** (→) | Direct dependency or call |
 | **Dashed arrow** (⇢) | Async or event-based communication |
