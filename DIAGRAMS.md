@@ -1171,18 +1171,17 @@ graph TB
 
 ## Legend
 
-<table>
-  <tr><th>Symbol</th><th>Meaning</th></tr>
-  <tr><td><span style="background:#00e676;color:#000;padding:2px 12px;border-radius:3px;font-weight:bold">green node</span></td><td>New or improved element</td></tr>
-  <tr><td><span style="background:#0a2015;color:#00e676;padding:2px 12px;border-radius:3px;border:2px solid #00e676;font-weight:bold">green section</span></td><td>New section (dark green fill, green border)</td></tr>
-  <tr><td><span style="background:#e94560;color:#000;padding:2px 12px;border-radius:3px;font-weight:bold">core</span></td><td>Core engine group</td></tr>
-  <tr><td><span style="background:#6c5ce7;color:#000;padding:2px 12px;border-radius:3px;font-weight:bold">agents</span></td><td>Agent system group</td></tr>
-  <tr><td><span style="background:#74b9ff;color:#000;padding:2px 12px;border-radius:3px;font-weight:bold">sync</span></td><td>UI / sync execution group</td></tr>
-  <tr><td><span style="background:#00cec9;color:#000;padding:2px 12px;border-radius:3px;font-weight:bold">async</span></td><td>State / async execution group</td></tr>
-  <tr><td><span style="background:#fdcb6e;color:#000;padding:2px 12px;border-radius:3px;font-weight:bold">cache</span></td><td>Persistence / cache group</td></tr>
-  <tr><td>⚑</td><td>Feature-gated (conditional loading)</td></tr>
-  <tr><td><b>Solid arrow</b> (→)</td><td>Direct dependency or call</td></tr>
-  <tr><td><b>Dashed arrow</b> (⇢)</td><td>Async or event-based communication</td></tr>
-</table>
+| Symbol | Meaning |
+|--------|---------|
+| ![](https://img.shields.io/badge/green_node-00e676?style=for-the-badge) | New or improved element |
+| ![](https://img.shields.io/badge/green_section-f0fff5?style=for-the-badge&logoColor=00e676) | New section (mint fill, green border) |
+| ![](https://img.shields.io/badge/core_engine-fff0f0?style=for-the-badge) | Core engine group (rose border) |
+| ![](https://img.shields.io/badge/agent_system-f3f0ff?style=for-the-badge) | Agent system group (purple border) |
+| ![](https://img.shields.io/badge/sync_/_UI-f0f5ff?style=for-the-badge) | UI / sync execution group (blue border) |
+| ![](https://img.shields.io/badge/state_/_async-f0ffff?style=for-the-badge) | State / async execution group (teal border) |
+| ![](https://img.shields.io/badge/cache-fffef0?style=for-the-badge) | Persistence / cache group (yellow border) |
+| ⚑ | Feature-gated (conditional loading) |
+| **Solid arrow** (→) | Direct dependency or call |
+| **Dashed arrow** (⇢) | Async or event-based communication |
 
 14 diagrams: 12 core architecture + 2 agent infrastructure additions.
