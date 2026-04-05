@@ -1,6 +1,6 @@
 # Multi-Agent Orchestration Architecture
 
-> Reverse-engineered architectural blueprint of a production-grade multi-agent AI system, distilled into conceptual patterns and 14 detailed Mermaid diagrams.
+> Architectural blueprint of a production-grade multi-agent AI system, distilled into conceptual patterns and 14 detailed Mermaid diagrams.
 
 ## What Is This?
 
@@ -25,10 +25,8 @@ Most "multi-agent frameworks" are just agents calling agents in messy loops. Thi
 
 | File | Description |
 |------|-------------|
-| [ARCHITECTURE.md](ARCHITECTURE.md) | Full architectural description (English) |
-| [claude-code-architecture.md](claude-code-architecture.md) | 14 Mermaid diagrams with visual architecture |
-| [TASK.md](TASK.md) | Task documentation and findings log |
-| [POST.md](POST.md) | Social media post drafts |
+| [ARCHITECTURE.md](ARCHITECTURE.md) | Full architectural description |
+| [DIAGRAMS.md](DIAGRAMS.md) | 14 Mermaid diagrams with visual architecture |
 
 ## Architecture Overview
 
@@ -84,7 +82,7 @@ Context window management through: History Snip, Microcompact, Auto-Compact, Con
 
 ## Diagrams
 
-The [diagram file](claude-code-architecture.md) contains 14 Mermaid diagrams:
+The [diagram file](DIAGRAMS.md) contains 14 Mermaid diagrams:
 
 1. **High-Level System Architecture** — All modules and connections
 2. **Query Loop Lifecycle** — Conversation turn sequence
@@ -101,26 +99,25 @@ The [diagram file](claude-code-architecture.md) contains 14 Mermaid diagrams:
 13. **Agent Communication System** — Mailbox, notifications, routing
 14. **Prompt Cache Sharing** — Cache optimization architecture
 
-Green-highlighted elements indicate new discoveries or improvements found during verification.
+> [!NOTE]
+> <span style="background-color:#00e676;color:#000;padding:2px 8px;border-radius:3px">Green-highlighted elements</span> indicate improvements and additions made during the architectural analysis.
 
-## Verification Methodology
+## Verified Facts
 
-Every claim was verified against actual source code:
+All architectural claims in this repository have been verified against real source code:
 
-| Common Claim | Verified Reality |
-|-------------|-----------------|
-| "13 hook events" | **27** hook events across 8 categories |
-| "3 compaction strategies" | **5** strategies (Context Collapse + Session Memory live in separate services) |
-| "6 permission modes" | **7** modes (bubble — parent delegation — was missed) |
-| "6 MCP transports" | **7** transports (SSE-IDE + Managed Proxy were missed) |
-| "stop_reason drives the loop" | **Streaming detection** of tool_use blocks (stop_reason is explicitly unreliable) |
-| "4 agent execution paths" | **5** paths (Teammate spawning was missed) |
-| "~45 tools" | **~50+** tools |
+- **27** hook events across 8 categories
+- **5** compaction strategies (including Context Collapse and Session Memory in separate services)
+- **7** permission modes (including bubble — parent delegation)
+- **7** MCP transports (including SSE-IDE and Managed Proxy)
+- **5** agent execution paths (including Teammate spawning)
+- **50+** tools with in-process concurrency control
+- Conversation loop uses **streaming detection** of tool_use blocks (not stop_reason)
 
 ## License
 
-This is an architectural study for educational purposes. The patterns described are general software engineering concepts. No proprietary code is included.
+This is an architectural study for educational and research purposes. The patterns described are general software engineering concepts. No proprietary code is included.
 
 ## Contributing
 
-Found an inaccuracy? Have additional insights? Open an issue or PR. The goal is to make this the most accurate public documentation of production multi-agent architecture patterns.
+Found an inaccuracy? Have additional insights? Open an issue or PR.
