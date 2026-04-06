@@ -1,10 +1,12 @@
 # Multi-Agent Orchestration Architecture
 
-> Architectural blueprint of a production-grade multi-agent AI system, distilled into conceptual patterns and 14 detailed Mermaid diagrams.
+> Architectural blueprint of a production-grade multi-agent AI system — 14 diagrams documenting the current architecture, plus 8 evolutionary proposals with 3 additional diagrams.
 
 ## What Is This?
 
 This repository documents the **architecture and design patterns** behind a production multi-agent system, extracted through careful analysis of real source code. All application-specific references have been removed — what remains is a **reusable conceptual reference** for building multi-agent systems on any stack.
+
+The second part proposes **evolutionary improvements** — concrete gaps identified in the architecture with concrete solutions. Every proposal builds on existing patterns without breaking them.
 
 This is **not** a framework, SDK, or runnable code. It's an architectural study.
 
@@ -25,8 +27,10 @@ Most "multi-agent frameworks" are just agents calling agents in messy loops. Thi
 
 | File | Description |
 |------|-------------|
-| [ARCHITECTURE.md](ARCHITECTURE.md) | Full architectural description |
-| [DIAGRAMS.md](DIAGRAMS.md) | 14 Mermaid diagrams with visual architecture |
+| [ARCHITECTURE.md](ARCHITECTURE.md) | Full architectural description (15 sections) |
+| [DIAGRAMS.md](DIAGRAMS.md) | 14 Mermaid diagrams — current architecture |
+| [EVOLUTION.md](EVOLUTION.md) | 8 improvement proposals + cross-cutting concerns |
+| [EVOLUTION-DIAGRAM.md](EVOLUTION-DIAGRAM.md) | 3 Mermaid diagrams — proposed evolution by phase |
 
 ## Architecture Overview
 
@@ -80,9 +84,28 @@ Extensibility through 8 categories of hooks: Lifecycle, Tool, Permission, Agent,
 ### 7. 5 Compaction Strategies
 Context window management through: History Snip, Microcompact, Auto-Compact, Context Collapse, and Session Memory Compact.
 
+## Proposed Evolution
+
+The [EVOLUTION.md](EVOLUTION.md) document identifies 8 areas where the architecture can be strengthened, with concrete solutions for each:
+
+| # | Area | Key Proposal |
+|---|------|-------------|
+| 1 | **Resilience** | Circuit breaker, agent failure classification (TRANSIENT/PERSISTENT/FATAL), MCP graceful degradation |
+| 2 | **Budget** | Hierarchical budgets (session → coordinator → workers), cache-aware model routing |
+| 3 | **Coordinator** | Verification feedback loops, dependency-aware task scheduling, structured scratchpad |
+| 4 | **Communication** | Request-response overlay via correlationId, structured triage protocol |
+| 5 | **Observability** | Distributed tracing via createSubagentContext, extended transcripts, metrics with baselines |
+| 6 | **Concurrency** | Adaptive semaphore (2–20), latency-based slot weights |
+| 7 | **Strategy Memory** | Execution pattern index as extension of Session Memory Compact |
+| 8 | **Security** | Structured audit log, task-type-aware quotas, auto secret detection |
+
+Plus cross-cutting: compaction awareness for new mechanisms, 4 new hook events (27 → 31), and incremental migration paths.
+
+See [EVOLUTION-DIAGRAM.md](EVOLUTION-DIAGRAM.md) for 3 visual diagrams organized by implementation phase.
+
 ## Diagrams
 
-The [diagram file](DIAGRAMS.md) contains 14 Mermaid diagrams:
+The [DIAGRAMS.md](DIAGRAMS.md) file contains 14 Mermaid diagrams of the current architecture:
 
 1. **High-Level System Architecture** — All modules and connections
 2. **Query Loop Lifecycle** — Conversation turn sequence
@@ -99,7 +122,11 @@ The [diagram file](DIAGRAMS.md) contains 14 Mermaid diagrams:
 13. **Agent Communication System** — Mailbox, notifications, routing
 14. **Prompt Cache Sharing** — Cache optimization architecture
 
-![](https://img.shields.io/badge/Green_elements-00e676?style=flat-square) — improvements and additions made during the architectural analysis. See the full [legend in DIAGRAMS.md](DIAGRAMS.md#legend).
+The [EVOLUTION-DIAGRAM.md](EVOLUTION-DIAGRAM.md) file adds 3 diagrams for the proposed improvements:
+
+1. **Resilience & Budget** (Phase 1) — Circuit breaker, failure recovery, hierarchical budgets
+2. **Coordinator & Communication** (Phase 2) — Feedback loops, task DAG, request-response
+3. **Observability, Security & Optimization** (Phases 3-4) — Tracing, audit, adaptive concurrency
 
 ## Verified Facts
 
@@ -119,4 +146,4 @@ This is an architectural study for educational and research purposes. The patter
 
 ## Contributing
 
-Found an inaccuracy? Have additional insights? Open an issue or PR.
+Found an inaccuracy? Have additional insights? Want to add patterns from your own experience? Open an issue or PR.
